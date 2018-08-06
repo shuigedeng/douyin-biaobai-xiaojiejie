@@ -19,7 +19,7 @@ class MessageBox(QtWidgets.QWidget):#继承自父类QtWidgets.QWidget
 
         #self.setWindowFlags(QtCore.Qt.WindowMinimizeButtonHint)#PyQT禁止窗口最大化按钮和关闭按钮
         self.setWindowTitle(u'小姐姐我观察你很久了') # 仅仅设置窗体标题，不设置位置。
-        self.setWindowIcon(QIcon('rose.png')) # 调用QIcon构造函数时，我们需要提供要显示的图标的路径(相对或绝对路径)。同时注意：使用QIcon类型必须导入此模块from PyQt5.QtGui import QIcon
+        self.setWindowIcon(QIcon('icon.png')) # 调用QIcon构造函数时，我们需要提供要显示的图标的路径(相对或绝对路径)。同时注意：使用QIcon类型必须导入此模块from PyQt5.QtGui import QIcon
         self.setToolTip(u'小姐姐我观察你很久了')#调用setToolTip()方法,该方法接受富文本格式的参数,css之类。
         QtWidgets.QToolTip.setFont(QFont('华文楷体', 10))#设置字体以及字体大小
 
@@ -33,7 +33,7 @@ class MessageBox(QtWidgets.QWidget):#继承自父类QtWidgets.QWidget
         #Qt中提供的调色板QPalette类就是专门用于管理控件的外观显示。QPalette类相当于对话框或控件的调色板，管理着控件和窗体的所有颜色。
         #每个窗体和控件都包含一个QPalette对象，在显示时，对其做相应的设置即可
         self.window_pale=QtGui.QPalette()#实例化QPalette类
-        self.window_pale.setBrush(self.backgroundRole(),QtGui.QBrush(QtGui.QPixmap("biaobai/zjl.jpg")))#打开图片
+        self.window_pale.setBrush(self.backgroundRole(),QtGui.QBrush(QtGui.QPixmap("zjl.jpg")))#打开图片
         self.setPalette(self.window_pale)#应用背景色
         # setStyleSheet来设置图形界面的外观
 

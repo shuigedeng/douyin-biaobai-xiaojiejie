@@ -10,3 +10,5 @@ if __name__ == '__main__':
     #opts = ['confession.py', '-F', '-w']
     #opts = ['confession.py', '-F', '-w', '--icon=TargetOpinionMain.ico','--upx-dir','upx391w']
     run(opts)
+
+# pyinstaller --paths C:/Users/Administrator/AppData/Local/Programs/Python/Python35/Lib/site-packages/PyQt5/Qt/bin -F -w confession.py
